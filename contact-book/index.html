@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact-book : Vanilla JavaScipt only</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>My <span class="text-success">Contact </span> Book</h1>
+        <form id="phoneNumberForm">
+            <div class="formGroup">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" minlength="3">
+
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" class="form-control">
+
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" class="form-control">
+            </div>
+            <input id="btn" type="submit" value="Add a number!" class="btn btn-warning btn-block">
+        </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+            <tr>
+                <th>First name</th>
+                <th>Surname</th>
+                <th>Phone number</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="phoneList" ></tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
